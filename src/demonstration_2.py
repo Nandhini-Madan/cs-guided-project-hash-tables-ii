@@ -52,5 +52,12 @@ def frequency_sort(s: str) -> str:
     str
     """
     # Your code here
+    result=sorted(s,key=s.count,reverse=True)
+    #print(result)
+    output="".join(map(str,result))
+    return output
+print(frequency_sort("Bbcc"))
+print(frequency_sort("dddbbb"))
+print(frequency_sort("free"))
 
     
